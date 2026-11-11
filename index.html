@@ -30,7 +30,7 @@
   <header>
     <div class="brand">말랑이 만지기 · MallangTouch</div>
     <h1>개인정보처리방침</h1>
-    <p class="meta">시행일: <time datetime="2026-10-29">2026년 10월 29일</time> · 최종 수정일: 2026년 10월 29일</p>
+    <p class="meta">시행일: <time datetime="2026-10-29">2026년 10월 29일</time> · 최종 수정일: 2026년 11월 11일</p>
     <p class="lead">말랑이 만지기 운영자(이하 “운영자”)는 Android 앱 <strong>말랑이 만지기</strong>에서 처리하는 정보와 이용 목적, 보관 및 삭제 방법을 다음과 같이 안내합니다.</p>
     <p class="meta">적용 앱: 말랑이 만지기 · Android 패키지: <code>com.dottoline.mallangtouch</code></p>
     <div class="summary">게임 진행은 기기에 저장됩니다. Google Play Games 연결 시에는 게임 진행을 Google 클라우드에 동기화할 수 있습니다. 앱은 광고를 표시하지 않으며 광고 ID를 사용하는 광고 SDK를 포함하지 않습니다. 문의 메일과 화면 캡처·공유는 사용자가 해당 기능을 선택할 때 처리됩니다.</div>
@@ -50,6 +50,8 @@
         <tr><th scope="row">게임 진행 및 설정</th><td>선택한 말랑이·색상·배경, 소품 배치, 퀵바, 호감도, 재화, 획득 콘텐츠, 업적·퀘스트·기록, 우편 수령 상태, 게임 설정 및 진행 시각</td><td>게임 진행 저장·복원과 보상 중복 방지를 위해 기기 내 앱 저장 공간에서 처리합니다. Google Play Games 연결 시 게임 저장 데이터가 동기화 대상에 포함됩니다.</td></tr>
         <tr><th scope="row">Google Play Games 연결</th><td>게임별 플레이어 ID, 게이머 표시 이름, 계정 연결 상태, 게임 저장 데이터 및 동기화 시각·버전 정보</td><td>계정에 맞는 진행 복원·기기 간 동기화·저장 충돌 처리를 위해 앱과 Google Play Games 서비스에서 처리합니다. 앱이 Google 계정 비밀번호를 직접 받지는 않습니다.</td></tr>
         <tr><th scope="row">Google Play 구매 연동</th><td>상품 ID, 구매 상태, 구매 토큰 또는 토큰의 해시값, 구매 권한 확인 시각 등 구매 처리 정보</td><td>해당 기능이 제공되고 사용되는 경우 상품 조회·보유권 확인·구매 처리와 복원에 사용합니다. 결제수단 정보는 Google Play가 처리하며 앱이 신용카드 번호를 직접 받지 않습니다.</td></tr>
+        <tr><th scope="row">Google Play 앱 업데이트</th><td>기기 메타데이터, 앱 버전, 설치된 모듈 및 에셋 팩 목록</td><td>Google Play가 제공 가능한 업데이트와 예상 다운로드 크기를 확인하는 데 사용합니다. Google 안내에 따르면 이 정보는 암호화되어 처리되며, 정해진 보관 기간이 지나면 삭제됩니다.</td></tr>
+        <tr><th scope="row">Google Play 추가 리소스 다운로드</th><td>기기 메타데이터, 앱 버전</td><td>기기에 맞는 게임 리소스를 전달하고 앱 업데이트 후 설치된 리소스를 유지하기 위해 Google Play가 처리합니다. Google 안내에 따르면 이 정보는 암호화되며, 정해진 보관 기간 후 삭제됩니다.</td></tr>
         <tr><th scope="row">문의하기</th><td>사용자가 보내는 이메일 주소·표시 이름·문의 본문과 첨부 자료, 문의 유형, 앱 버전, Android 버전, 기기 모델</td><td>앱은 문의 내용을 사용자의 메일 앱에 전달합니다. 사용자가 메일 앱에서 실제 발송한 경우에만 운영자가 이메일로 받아 답변·오류 확인·후속 지원에 사용합니다.</td></tr>
         <tr><th scope="row">사진 꾸미기·저장·공유</th><td>사용자가 촬영을 요청한 화면 이미지, 자르기 영역, 선택한 장식 및 직접 입력한 문구</td><td>기기에서 결과 이미지를 만들고 미리보기·갤러리 저장·선택한 앱으로 공유하는 데 사용합니다. 이 기능의 이미지를 운영자의 서버에 자동 업로드하지 않습니다.</td></tr>
         <tr><th scope="row">우편 목록 갱신</th><td>GitHub에서 제공하는 공개 우편·보상 목록을 받기 위한 네트워크 요청</td><td>최신 우편 목록을 다운로드합니다. 이 요청에 앱이 플레이어 ID나 저장 데이터를 붙여 보내지는 않습니다. GitHub는 요청 처리 과정에서 IP 주소 등 접속 정보를 처리할 수 있습니다.</td></tr>
@@ -63,10 +65,13 @@
     <ul>
       <li><strong>Google Play Games:</strong> 게임 계정 연결과 클라우드 저장을 제공합니다. SDK의 데이터 처리 내용은 <a href="https://developer.android.com/games/pgs/data-collection?hl=ko">Google의 Play Games 데이터 안내</a> 및 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있습니다.</li>
       <li><strong>Google Play 결제:</strong> 구매 기능 사용 시 결제와 구매 상태 조회를 처리합니다. Google이 보관하는 결제 내역의 처리·보관은 Google의 방침과 적용 법령을 따릅니다.</li>
+      <li><strong>Google Play 앱 업데이트:</strong> 앱을 열거나 앱으로 돌아올 때 Google Play에서 업데이트 가능 여부를 확인합니다. 자세한 처리 내용은 <a href="https://developer.android.com/guide/playcore/in-app-updates#data-safety">Google의 인앱 업데이트 데이터 처리 안내</a>를 참고하세요.</li>
+      <li><strong>Google Play Asset Delivery:</strong> 말랑이 애니메이션 등 추가 게임 리소스를 다운로드하고 업데이트 후 유지합니다. 자세한 처리 내용은 <a href="https://developer.android.com/guide/playcore/asset-delivery?hl=ko#data-safety">Google의 추가 리소스 다운로드 데이터 처리 안내</a>를 참고하세요.</li>
       <li><strong>이메일 서비스:</strong> 사용자가 보낸 문의는 사용자의 메일 서비스와 운영자의 Gmail을 통해 전달·보관됩니다. 문의에 비밀번호, 주민등록번호, 카드 번호 등 불필요한 민감정보를 넣지 마세요.</li>
       <li><strong>GitHub:</strong> 공개 우편 목록과 이 방침 웹페이지를 제공합니다. 접속 정보의 처리는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 따릅니다.</li>
       <li><strong>사용자가 선택한 공유 앱:</strong> 공유를 실행하면 선택한 결과 이미지가 해당 앱에 전달됩니다. 전달 이후 정보 처리는 수신 앱의 방침과 사용자 선택에 따릅니다.</li>
     </ul>
+    <p>Google Play 리소스 다운로드·추출에는 SDK의 데이터 동기화 포그라운드 서비스가 사용될 수 있습니다. 앱에서 추가 리소스의 다운로드 진행 상태를 확인할 수 있습니다.</p>
     <p>외부 서비스의 서버 위치와 운영 방식에 따라 정보가 대한민국 외의 국가에서 처리될 수 있습니다. 각 제공자의 처리·보관 및 권리 행사 방법은 위 안내에서 확인할 수 있습니다. 법령상 의무가 있거나 적법한 요구가 있는 경우에는 필요한 범위의 정보가 제공될 수 있습니다.</p>
   </section>
   <section id="capture">
